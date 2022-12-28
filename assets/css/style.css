@@ -27,5 +27,9 @@
     grid-row-gap: 50px;
     padding-top: 30px;
     margin-left: 9%;
+}
 
+.card-pokemon h1{
+    text-align: center;
+    text-transform: capitalize;
 }
