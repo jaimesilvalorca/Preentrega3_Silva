@@ -17,17 +17,12 @@ class Pokemon{
       this.numero = numero
       this.nombre = nombre
       this.tipo = tipo
-
   }
 }
 const pokemon1 = new Pokemon(0,'No encontrado','Sin tipo')
 
 const pokemon1String = JSON.stringify(pokemon1);
 localStorage.setItem('pokemon1', pokemon1String);
-
-// el objeto guardado en el localstorage se va a utilizar cuando el buscador no encuentre ningun pokemon, se va a mostrar ese objeto, en construccion......
-
-
 
 function mostrarPokemon (data) {
   const div = document.createElement("div");
@@ -47,6 +42,7 @@ function mostrarPokemon (data) {
             Tipo: ${data.types[0].type.name}
         </li>
       </ul>
+      <button type="button" class="btn btn-outline-dark">Agregar</button>
     </div>
   </div>
 </div>`;

@@ -33,3 +33,7 @@
     text-align: center;
     text-transform: capitalize;
 }
+
+.card-body{
+    display: grid;    
+}
